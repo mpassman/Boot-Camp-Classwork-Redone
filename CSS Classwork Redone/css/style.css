@@ -1,0 +1,127 @@
+/**
+ First External CSS Stylesheet
+ **/
+
+/*
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up.
+Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
+
+Style specs:
+
+  * `body`
+    * The background color is `#efeee7`.
+    * The font used is `Georgia,"Times New Roman",Times,serif;`.
+    * The font color is `#333333`.
+    * Be sure to zero out the body margins and padding so the page is flush to the top of the page:
+      ```css
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      ```
+  * `header`
+    * The background color is `#333333`.
+  * `h1`
+    * The font color is `#eee`.
+    * The font size is `28px`.
+    * Look at the example on the screen, and eyeball the padding and/or margins and positioning of the text.
+  * `h2`
+    * The font size is `24px`
+  * Make the container have a width of 1024 pixels, and center it. You do this using `margin: 0 auto;`.
+  * Make `#main-bio`, `#contact-info`, `#bio-image` all `float: left`.
+  * Make the `#bio-image` have a width of 200 pixels.
+  * Be sure to include `alt` text in all images
+  * `#main-bio` should have a width of `70%`.
+    * Add margins to the image so there is distance between it and the bio text.
+  * `#contact-info` should have a width of `30%`.
+  * Adjust the line height so it is 1.5 times the size of the font.
+  * Make the link color `#d21034`.
+
+* If you forgot how to write the CSS properties, you can reference all CSS properties here <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference> -->
+*/
+body 
+/*  * Be sure to zero out the body margins and padding so the page is flush to the top of the page:
+      ```css
+      body {
+        margin: 0;
+        padding: 0;
+      }*/
+{
+  padding: 0;
+  margin: 0;
+  /* * The font used is `Georgia,"Times New Roman",Times,serif;`.*/
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  /*    * The font color is `#333333`.*/
+  color: #333;
+  /* The background color is `#efeee7`.*/
+  background: #efeee7;
+}
+
+header 
+/*  * `header`
+    * The background color is `#333333`.*/{
+  background: #333;
+}
+
+h1 
+/* * `h1`
+    * The font color is `#eee`.
+    * The font size is `28px`.
+    * Look at the example on the screen, and eyeball the padding and/or margins and positioning of the text.*/{
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #eee;
+  text-align: center;
+}
+
+h2 
+/** `h2`
+    * The font size is `24px`*/{
+  font-size: 24px;
+}
+
+.container 
+/* Make the container have a width of 1024 pixels, and center it. You do this using `margin: 0 auto;`.*/{
+  width: 1024px;
+  margin: 0 auto;
+}
+/*  * Make `#main-bio`, `#contact-info`, `#bio-image` all `float: left`. */
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#main-bio {
+  width: 70%;
+  float: left;
+}
+
+#contact-info
+/*  * `#contact-info` should have a width of `30%`.
+* Adjust the line height so it is 1.5 times the size of the font. */
+
+{
+  width: 30%;
+  line-height: 42px;
+  float: right;
+}
+
+
+/* Make the link color `#d21034`.*/
+a {
+  color: #d21034;
+}
+
+#bio-image 
+/*  * Make the `#bio-image` have a width of 200 pixels.
+  * Add margins to the image so there is distance between it and the bio text.*/
+{
+  width: 200px;
+  margin-right: 20px;
+}
